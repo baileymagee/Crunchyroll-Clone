@@ -1,0 +1,9 @@
+.header-nav_container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav_left {
+    display: flex;
+}
