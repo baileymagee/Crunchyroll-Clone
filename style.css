@@ -1,9 +1,28 @@
+html,
+body {
+    margin: 0;
+}
+
 .header-nav_container {
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(187, 186, 186);
+    width: auto;
 }
 
-.header-nav_left {
+.crunchyroll__button {
+    padding-top: 3px;
+    padding-left: 1px;
+}
+
+.header-nav_group {
     display: flex;
+    justify-content: space-around;
+    padding:
+}
+
+a.header-nav_link {
+    padding: 10px;
 }
