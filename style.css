@@ -1,28 +1,54 @@
 html,
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .header-nav_container {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.88);
     color: rgb(187, 186, 186);
     width: auto;
+    height: 60px;
 }
+
 
 .crunchyroll__button {
     padding-top: 3px;
-    padding-left: 3px;
+    padding-left: 10px;
+    padding-right: 3px;
 }
 
 .header-nav_group {
     display: flex;
     justify-content: space-around;
-    padding:
+    align-items: center;
+    font-size: 18px;
+    height: 60px;
+}
+
+.header-nav_group :hover {
+    background-color: black;
+    color: white;
 }
 
 a.header-nav_link {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.main_img {
+    background-color: black;
+    background-image: url("dsBackground.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.background_img {
+    position: absolute;
 }
