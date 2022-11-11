@@ -4,20 +4,27 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+.main_container {
+    display: flex;
+    flex-direction: column;
+    height: 6000px;
+    background-color: black
+}
+
 .header-nav_container {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.88);
+    background-color: #23252b;
     color: rgb(187, 186, 186);
     width: auto;
     height: 60px;
+    position: sticky;
+    top: 0;
 }
 
-
 .crunchyroll__button {
-    padding-top: 3px;
     padding-left: 10px;
-    padding-right: 3px;
+    padding-right: 10px;
 }
 
 .header-nav_group {
@@ -31,13 +38,55 @@ body {
 .header-nav_group :hover {
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+
+#crunchyroll_home {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #f47521;
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#browse {
+    display: flex;
+    align-items: center;
+}
+
+#news {
+    display: flex;
+    align-items: center;
+}
+
+#search_icon {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#watchlist_icon {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#profile_icon {
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 a.header-nav_link {
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
     height: 100%;
+    font-size: 16px;
 }
 
 .main_img {
@@ -51,4 +100,28 @@ a.header-nav_link {
 
 .background_img {
     position: absolute;
+}
+
+.carousel_controls {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 5% 15px;
+}
+
+.carousel_button {
+    background-color: #23252b;
+    width: 14.5%;
+    padding: 8px 5px;
+    font-size: small;
+}
+
+.carousel_button p {
+    margin: 2px;
+}
+
+.carousel_button:hover {
+    background-color: #32353d;
+    cursor: pointer;
 }
