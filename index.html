@@ -16,6 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://static.crunchyroll.com/cxweb/assets/img/favicons/favicon-16x16.png">
 </head>
 
 <body>
@@ -23,10 +27,19 @@
         <div class="header-nav_container">
             <div class="header-nav_left">
                 <span class="header-nav_group">
+                    <span class="material-symbols-outlined" id="hamburger-menu">
+                        menu
+                    </span>
+
                     <span class="header-nav_link" id="crunchyroll_home">
                         <div class="crunchyroll_logo_button">
-                            <img class="crunchyroll__button" id="crunchyroll" src="crunchyLogo.png"
-                                style="height: 30px; width:30px">
+                            <!-- <img class="crunchyroll__button" id="crunchyroll" src="crunchyLogo.png"
+                                style="height: 30px; width:30px"> -->
+                            <div class="outer-logo">
+                                <div class="first-inner-logo">
+                                    <div class="second-inner-logo"></div>
+                                </div>
+                            </div>
                         </div>
                         <h1>crunchyroll</h1>
                     </span>
@@ -65,21 +78,21 @@
             </div>
             <div class="header-nav_right">
                 <span class="header-nav_group">
-                    <a class="header-nav_link">
+                    <a class="header-nav_link" id="search-button">
                         <div class="header__button" id="search">
                             <span class="search__label"><span class="material-symbols-outlined" id="search_icon">
                                     search
                                 </span></span>
                         </div>
                     </a>
-                    <a class="header-nav_link">
+                    <a class="header-nav_link" id="watchList-button">
                         <div class="header__button" id="watchList">
                             <span class="watchList__label"><span class="material-symbols-outlined" id="watchlist_icon">
                                     bookmark
                                 </span></span>
                         </div>
                     </a>
-                    <a class="header-nav_link">
+                    <a class="header-nav_link" id="profile-button">
                         <div class="header__button" id="profil">
                             <span class="profile__label"><span class="material-symbols-outlined" id="profile_icon">
                                     account_circle
@@ -89,10 +102,20 @@
                 </span>
             </div>
         </div>
-        <div class="slider_img">
+        <div id="slider-container" class="background-1">
             <div class="main_img" id="main_img">
-                <img src="Demon_Slayer_Entertainment_District_Arc-scaled.webp" style="height: 350px; width: 600px"
-                    alt="Demon Slayer">
+                <!-- <img src="Demon_Slayer_Entertainment_District_Arc-scaled.webp" style="height: 350px; width: 600px"
+                    alt="Demon Slayer"> -->
+                <div class="carousel-images-container">
+                    <div id="carousel-images" class="image-0">
+                        <img src="./carousel/og_img.jpg" alt="">
+                        <img src="./carousel/naruto.jpeg" alt="">
+                        <img src="./carousel/paranoia-agent.jpeg" alt="">
+                        <img src="./carousel/jujutsu-kaisen.jpg" alt="">
+                        <img src="./carousel/FLCL.webp" alt="">
+                        <img src="./carousel/dragon-ball.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="carousel_controls">
