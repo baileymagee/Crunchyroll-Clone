@@ -109,6 +109,12 @@ h1 {
     transition: .5s ease-in;
 }
 
+@media (min-width: 980px) {
+    .dropdown-hamburger.visible {
+        display: none;
+    }
+}
+
 .dropdown-hamburger.not-visible {
     position: fixed;
     top: 55px;
