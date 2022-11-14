@@ -4,8 +4,8 @@ const buttons = document.querySelectorAll(".carousel_button");
 const buttonArray = Array.from(buttons)
 
 
-const browseButton = document.querySelector('#browse')
-const dropDown = document.querySelector('.drop-down')
+const hamburgerMenuButton = document.querySelector('#hamburger-menu')
+const dropDown = document.querySelector('#dropdown-hamburger')
 
 const carousel = document.querySelector('#carousel-images')
 
@@ -28,3 +28,13 @@ for (let button of buttons) {
         }
     })
 }
+
+hamburgerMenuButton.addEventListener('click', () => {
+    if (dropDown.classList.contains('not-visible')) {
+        dropDown.classList.remove('not-visible')
+        dropDown.classList.add('visible')
+    } else {
+        dropDown.classList.remove('visible')
+        dropDown.classList.add('not-visible')
+    }
+})

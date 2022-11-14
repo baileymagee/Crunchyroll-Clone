@@ -77,10 +77,6 @@ body {
     cursor: pointer;
 }
 
-#hamburger-menu {
-    visibility: hidden;
-}
-
 #crunchyroll_home {
     height: 100%;
     display: flex;
@@ -94,6 +90,36 @@ h1 {
     position: relative;
     font-size: 20px;
     margin-right: 10px;
+}
+
+#hamburger-menu {
+    display: none;
+    font-size: 30px;
+}
+
+.dropdown-hamburger.visible {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    background-color: #23252b;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0px);
+    transition: .5s ease-in;
+}
+
+.dropdown-hamburger.not-visible {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    background-color: #23252b;
+    height: 300px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-150px);
+    transition: .5s ease-in;
 }
 
 #browse {
@@ -324,7 +350,7 @@ h3 {
 }
 
 @media (max-width: 979px) {
-    a.header-nav_link:not(#search-button, #watchList-button, #profile-button) {
+    a.header-nav_link:not(#search-button, #watchList-button, #profile-button, .dropdown-hamburger .header-nav_link) {
         display: none;
     }
 
@@ -333,7 +359,7 @@ h3 {
     }
 
     #hamburger-menu {
-        visibility: visible;
+        display: flex;
         padding-right: 20px;
     }
 
