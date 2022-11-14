@@ -29,7 +29,6 @@ body {
 
 .header-nav_right {
     margin-right: 5%;
-    ;
 }
 
 .crunchyroll__button {
@@ -217,11 +216,28 @@ a.header-nav_link {
     margin: 15px 20% 15px;
 }
 
-.carousel_button {
+
+.carousel_button:not(.mid-size) {
     background-color: #23252b;
     width: 14.5%;
     padding: 8px 5px;
     font-size: small;
+}
+
+.carousel_controls-mid-size {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    margin: 15px 25% 15px;
+}
+
+.carousel_button.mid-size {
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    height: 3px;
+    background-color: white;
+    width: 15%;
 }
 
 .carousel_button p {
@@ -320,5 +336,26 @@ h3 {
 
     .header-nav_left {
         margin-left: 2%
+    }
+
+    .carousel_controls-mid-size {
+        display: flex;
+    }
+
+    .carousel_controls {
+        display: none;
+    }
+
+    .bottom_container {
+        margin: 15px 20% 15px;
+        overflow: hidden;
+    }
+
+    .show_banner {
+        width: 25.5%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 7px;
     }
 }
