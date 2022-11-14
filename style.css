@@ -137,6 +137,7 @@ a.header-nav_link {
     justify-content: center;
     background-size: cover;
     transition: all 1s;
+    overflow: hidden;
 }
 
 .background-1 {
